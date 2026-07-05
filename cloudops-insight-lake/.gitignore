@@ -1,0 +1,254 @@
+# =============================================================================
+# CloudOps Insight Lake
+# Python / AWS Data Engineering project
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Python bytecode and caches
+# -----------------------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+.hypothesis/
+
+
+# -----------------------------------------------------------------------------
+# Python virtual environments
+# -----------------------------------------------------------------------------
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# -----------------------------------------------------------------------------
+# Python build and packaging artifacts
+# -----------------------------------------------------------------------------
+
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+# -----------------------------------------------------------------------------
+# Test and coverage artifacts
+# -----------------------------------------------------------------------------
+
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+pytest.xml
+test-results/
+
+
+# -----------------------------------------------------------------------------
+# Environment variables and secrets
+# -----------------------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+secrets/
+credentials/
+
+
+# -----------------------------------------------------------------------------
+# AWS local configuration and temporary artifacts
+# -----------------------------------------------------------------------------
+
+.aws/
+
+samconfig.toml
+.aws-sam/
+
+cdk.out/
+
+# Never commit exported credentials or temporary AWS session data
+aws_credentials*
+temporary_credentials*
+session_credentials*
+
+
+# -----------------------------------------------------------------------------
+# Local and generated data
+# -----------------------------------------------------------------------------
+
+data/raw/
+data/curated/
+data/generated/
+data/tmp/
+data/temp/
+
+tmp/
+temp/
+
+# Local benchmark output
+benchmark_output/
+benchmark_results/local/
+
+# Local Athena query results
+athena-results/
+
+
+# -----------------------------------------------------------------------------
+# Logs and runtime artifacts
+# -----------------------------------------------------------------------------
+
+*.log
+logs/
+
+*.pid
+*.seed
+*.pid.lock
+
+
+# -----------------------------------------------------------------------------
+# Jupyter
+# -----------------------------------------------------------------------------
+
+.ipynb_checkpoints/
+
+.profile_default/
+ipython_config.py
+
+
+# -----------------------------------------------------------------------------
+# IDEs and editors
+# -----------------------------------------------------------------------------
+
+.idea/
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+*.iml
+
+.project
+.pydevproject
+
+*.swp
+*.swo
+*~
+
+
+# -----------------------------------------------------------------------------
+# Operating systems
+# -----------------------------------------------------------------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+
+
+# -----------------------------------------------------------------------------
+# Terraform
+# -----------------------------------------------------------------------------
+
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+crash.log
+crash.*.log
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+.terraformrc
+terraform.rc
+
+# Keep provider dependency lock file in Git
+# .terraform.lock.hcl is intentionally NOT ignored
+
+
+# -----------------------------------------------------------------------------
+# Local Glue / Spark artifacts
+# -----------------------------------------------------------------------------
+
+.metastore_db/
+derby.log
+
+spark-warehouse/
+
+*.crc
+
+
+# -----------------------------------------------------------------------------
+# Local SQL clients and database files
+# -----------------------------------------------------------------------------
+
+*.db
+*.sqlite
+*.sqlite3
+
+
+# -----------------------------------------------------------------------------
+# Temporary exports and ad-hoc analysis files
+# -----------------------------------------------------------------------------
+
+exports/
+scratch/
+sandbox/
+
+*.tmp
+*.temp
+*.bak
+
+
+# -----------------------------------------------------------------------------
+# Local profiling and performance output
+# -----------------------------------------------------------------------------
+
+.prof/
+*.prof
+profile-output/
+
+
+# -----------------------------------------------------------------------------
+# Local application configuration
+# -----------------------------------------------------------------------------
+
+config/local.yaml
+config/local.yml
+config/local.json
+
+config/*_local.yaml
+config/*_local.yml
+config/*_local.json
