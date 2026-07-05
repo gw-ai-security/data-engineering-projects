@@ -704,40 +704,20 @@ This follows a backfill-and-cutover strategy.
 
 ```text
 cloudops-insight-lake/
-│
+├── .gitignore
+├── LICENSE
 ├── README.md
 ├── pyproject.toml
-├── requirements.txt
-│
-├── config/
-│
-├── contracts/
-│
 ├── docs/
-│   ├── adr/
-│   ├── architecture/
-│   └── diagrams/
-│
+│   └── project_evidence_map.md
 ├── src/
-│   ├── adapters/
-│   ├── collectors/
-│   ├── common/
-│   ├── quality/
-│   └── transforms/
-│
-├── sql/
-│   ├── athena/
-│   └── views/
-│
-├── tests/
-│
-├── tools/
-│   └── synthetic_data/
-│
-├── infrastructure/
-│
-└── aws_skill_labs/
+│   └── cloudops_insight_lake/
+│       └── __init__.py
+└── tests/
+    └── .gitkeep
 ```
+
+This is the current Phase 0 repository structure. Future implementation areas described elsewhere in this README are planned and are not yet implemented as Python package modules.
 
 The repository structure will evolve only when a concrete implementation requirement exists.
 
