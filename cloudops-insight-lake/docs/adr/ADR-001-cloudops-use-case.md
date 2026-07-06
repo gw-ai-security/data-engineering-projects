@@ -6,7 +6,7 @@
 
 ## Context
 
-Cloud platform teams often need to analyze data that originates from separate operational and financial contexts.
+Cloud platform teams often need to analyze data that originates from separate financial, resource inventory, and operational contexts.
 
 Cloud cost data describes what was charged. Resource inventory data describes which Lambda workloads exist and provides resource identity, configuration, and governance attributes. Operational metrics describe how those workloads are used and provide selected reliability signals.
 
